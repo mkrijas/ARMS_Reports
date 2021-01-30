@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="MDB">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=192.168.10.25;Initial Catalog=ARS_on_work</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>1e2330c8-2e9b-4441-a6fa-b77819ad1e23</DataSourceID>
+</RptDataSource>

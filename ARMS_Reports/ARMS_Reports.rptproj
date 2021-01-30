@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <FullPath>Debug</FullPath>
+    <OutputPath>bin\Debug</OutputPath>
+    <ErrorLevel>2</ErrorLevel>
+    <OverwriteDatasets>False</OverwriteDatasets>
+    <OverwriteDataSources>False</OverwriteDataSources>
+    <TargetServerVersion>SSRS2008R2</TargetServerVersion>
+    <Platform>Win32</Platform>
+    <TargetReportFolder>ARMS_Reports</TargetReportFolder>
+    <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+    <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
+    <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+    <TargetServerURL>http://192.168.10.25:4456/Reports_SSRS</TargetServerURL>
+    <StartItem>GC.rdl</StartItem>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'DebugLocal' ">
+    <FullPath>DebugLocal</FullPath>
+    <OutputPath>bin\DebugLocal</OutputPath>
+    <ErrorLevel>2</ErrorLevel>
+    <OverwriteDatasets>False</OverwriteDatasets>
+    <OverwriteDataSources>False</OverwriteDataSources>
+    <TargetServerVersion>SSRS2008R2</TargetServerVersion>
+    <Platform>Win32</Platform>
+    <TargetReportFolder>Report Project1</TargetReportFolder>
+    <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+    <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
+    <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <FullPath>Release</FullPath>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorLevel>2</ErrorLevel>
+    <OverwriteDatasets>False</OverwriteDatasets>
+    <OverwriteDataSources>False</OverwriteDataSources>
+    <TargetServerVersion>SSRS2008R2</TargetServerVersion>
+    <Platform>Win32</Platform>
+    <TargetReportFolder>Report Project1</TargetReportFolder>
+    <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+    <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
+    <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+  </PropertyGroup>
+  <PropertyGroup>
+    <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkZGw1MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAiIHhtbG5zOmRkbDUwMF81MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAvNTAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+    <DataSources>@(DataSource)</DataSources>
+    <DataSets>@(DataSet)</DataSets>
+    <Reports>@(Report)</Reports>
+  </PropertyGroup>
+  <ItemGroup>
+    <DataSource Include="MDB.rds" />
+    <DataSource Include="Mydb.rds" />
+  </ItemGroup>
+  <ItemGroup>
+    <Report Include="Bill_Consolidation.rdl" />
+    <Report Include="Bill_Primary_Freight.rdl" />
+    <Report Include="bill_toll.rdl" />
+    <Report Include="CF.rdl" />
+    <Report Include="cn_bulk_claim.rdl" />
+    <Report Include="consignments.rdl" />
+    <Report Include="consignments_inv_date.rdl" />
+    <Report Include="consignments_onroute.rdl" />
+    <Report Include="CreditorsExpenses.rdl" />
+    <Report Include="cum_tonnage.rdl" />
+    <Report Include="daybook.rdl" />
+    <Report Include="Driver_Income.rdl" />
+    <Report Include="expense_summary.rdl" />
+    <Report Include="expense_summary_truckwise.rdl" />
+    <Report Include="FF.rdl" />
+    <Report Include="Fuel_Purchase_Register.rdl" />
+    <Report Include="GC.rdl" />
+    <Report Include="halt_report.rdl" />
+    <Report Include="Ledgers.rdl" />
+    <Report Include="Ledgers_det.rdl" />
+    <Report Include="Memo.rdl" />
+    <Report Include="OutstandingBills.rdl" />
+    <Report Include="OutstandingBills2.rdl" />
+    <Report Include="PnL.rdl" />
+    <Report Include="PnL2.rdl" />
+    <Report Include="RecPay.rdl" />
+    <Report Include="routeExp_sum.rdl" />
+    <Report Include="Sale_voucher_svh.rdl" />
+    <Report Include="SettledBills.rdl" />
+    <Report Include="time_spent.rdl" />
+    <Report Include="time_spent_all.rdl" />
+    <Report Include="tonn_report.rdl" />
+    <Report Include="TrialBalance.rdl" />
+    <Report Include="TrialBalance_consolidated.rdl" />
+    <Report Include="Trip_events.rdl" />
+    <Report Include="Trip_Exp.rdl" />
+    <Report Include="Trip_Exp_Dest.rdl" />
+    <Report Include="trip_status.rdl" />
+    <Report Include="trip_summary.rdl" />
+    <Report Include="trip_summary_SPO.rdl" />
+    <Report Include="truck_performance.rdl" />
+    <Report Include="truck_performance_wheels.rdl" />
+    <Report Include="truck_report.rdl" />
+    <Report Include="truck_status_report.rdl" />
+    <Report Include="truck_status_SPO.rdl" />
+    <Report Include="truck_transfers.rdl" />
+    <Report Include="voucher_cpt.rdl" />
+    <Report Include="voucher_jrn.rdl" />
+    <Report Include="voucher_prchex.rdl" />
+    <Report Include="voucher_sale.rdl" />
+    <Report Include="voucher_tst.rdl" />
+    <Report Include="WC.rdl" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
+</Project>

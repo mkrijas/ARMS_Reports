@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "ARMS_Reports", "ARMS_Reports\ARMS_Reports.rptproj", "{62A3159C-9B91-47F7-B452-FC63A2396FF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62A3159C-9B91-47F7-B452-FC63A2396FF7}.Debug|Default.ActiveCfg = Debug
+		{62A3159C-9B91-47F7-B452-FC63A2396FF7}.Debug|Default.Build.0 = DebugLocal
+		{62A3159C-9B91-47F7-B452-FC63A2396FF7}.Debug|Default.Deploy.0 = DebugLocal
+		{62A3159C-9B91-47F7-B452-FC63A2396FF7}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{62A3159C-9B91-47F7-B452-FC63A2396FF7}.DebugLocal|Default.Build.0 = DebugLocal
+		{62A3159C-9B91-47F7-B452-FC63A2396FF7}.DebugLocal|Default.Deploy.0 = DebugLocal
+		{62A3159C-9B91-47F7-B452-FC63A2396FF7}.Release|Default.ActiveCfg = Release
+		{62A3159C-9B91-47F7-B452-FC63A2396FF7}.Release|Default.Build.0 = Release
+		{62A3159C-9B91-47F7-B452-FC63A2396FF7}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
