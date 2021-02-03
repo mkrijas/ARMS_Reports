@@ -110,13 +110,12 @@
       </Fields>
     </DataSet>
     <DataSet Name="branches_ds">
-      <Query>
-        <DataSourceName>DataSource1</DataSourceName>
-        <CommandText>SELECT branch_id,branch_Name FROM BRANCHES</CommandText>
-      </Query>
+      <SharedDataSet>
+        <SharedDataSetReference>branches_ds</SharedDataSetReference>
+      </SharedDataSet>
       <Fields>
         <Field Name="branch_Id">
-          <DataField>branch_id</DataField>
+          <DataField>branch_Id</DataField>
           <rd:TypeName>System.Byte</rd:TypeName>
         </Field>
         <Field Name="branch_Name">
@@ -1345,7 +1344,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
