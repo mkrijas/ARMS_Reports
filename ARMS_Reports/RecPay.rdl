@@ -90,7 +90,7 @@
                   <Width>0.80667cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.70083cm</Width>
+                  <Width>6.04541cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>9.23334cm</Width>
@@ -527,7 +527,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <Color>SlateBlue</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <ListLevel>1</ListLevel>
@@ -558,7 +560,10 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!GroupName.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>SlateBlue</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -591,7 +596,9 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!Receipt.Value)</Value>
                                   <Style>
+                                    <FontWeight>Bold</FontWeight>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>SlateBlue</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -623,7 +630,9 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!payment.Value)</Value>
                                   <Style>
+                                    <FontWeight>Bold</FontWeight>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>SlateBlue</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -657,6 +666,7 @@
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>SlateBlue</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -690,6 +700,7 @@
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>SlateBlue</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -755,7 +766,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!GroupName.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1251,7 +1262,7 @@
             </TablixRowHierarchy>
             <DataSetName>cf_Ds</DataSetName>
             <Height>3.6cm</Height>
-            <Width>20.74084cm</Width>
+            <Width>26.08542cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1262,7 +1273,7 @@
         <Height>1.41732in</Height>
         <Style />
       </Body>
-      <Width>8.16569in</Width>
+      <Width>10.26985in</Width>
       <Page>
         <PageHeight>21cm</PageHeight>
         <PageWidth>14.8cm</PageWidth>

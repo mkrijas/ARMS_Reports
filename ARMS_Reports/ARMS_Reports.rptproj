@@ -76,6 +76,7 @@
     <Report Include="Ledgers.rdl" />
     <Report Include="Ledgers_det.rdl" />
     <Report Include="Memo.rdl" />
+    <Report Include="MemoPrint.rdl" />
     <Report Include="OutstandingBills.rdl" />
     <Report Include="OutstandingBills2.rdl" />
     <Report Include="PnL.rdl" />

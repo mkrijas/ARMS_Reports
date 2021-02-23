@@ -105,13 +105,13 @@
       </Fields>
     </DataSet>
     <DataSet Name="branches_ds">
-		<Query>
-			<DataSourceName>MyDB</DataSourceName>
-			<CommandText>SELECT branch_id,branch_Name FROM BRANCHES</CommandText>
-		</Query>
-		<Fields>
-			<Field Name="branch_Id">
-				<DataField>branch_id</DataField>
+      <Query>
+        <DataSourceName>MyDB</DataSourceName>
+        <CommandText>SELECT branch_id,branch_Name FROM BRANCHES</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="branch_Id">
+          <DataField>branch_id</DataField>
           <rd:TypeName>System.Byte</rd:TypeName>
         </Field>
         <Field Name="branch_Name">
@@ -212,9 +212,11 @@
                           <PaddingBottom>2pt</PaddingBottom>
                         </Style>
                       </Textbox>
-                      <ColSpan>3</ColSpan>
+                      <ColSpan>5</ColSpan>
                     </CellContents>
                   </TablixCornerCell>
+                  <TablixCornerCell />
+                  <TablixCornerCell />
                   <TablixCornerCell />
                   <TablixCornerCell />
                   <TablixCornerCell>
@@ -404,6 +406,72 @@
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox16</rd:DefaultName>
+                        <Style>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixCornerCell>
+                  <TablixCornerCell>
+                    <CellContents>
+                      <Textbox Name="Textbox4">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>Billing from</Value>
+                                <Style>
+                                  <FontFamily>Arial</FontFamily>
+                                  <FontWeight>Bold</FontWeight>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox4</rd:DefaultName>
+                        <Style>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixCornerCell>
+                  <TablixCornerCell>
+                    <CellContents>
+                      <Textbox Name="Textbox6">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>Billing To</Value>
+                                <Style>
+                                  <FontFamily>Arial</FontFamily>
+                                  <FontWeight>Bold</FontWeight>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox6</rd:DefaultName>
                         <Style>
                           <Border>
                             <Color>LightGrey</Color>
@@ -653,7 +721,7 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>2.17708in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1in</Width>
@@ -935,24 +1003,37 @@
                   </TablixHeader>
                   <TablixMembers>
                     <TablixMember>
+                      <Group Name="billin_fr">
+                        <GroupExpressions>
+                          <GroupExpression>=Fields!billin_fr.Value</GroupExpression>
+                        </GroupExpressions>
+                      </Group>
+                      <SortExpressions>
+                        <SortExpression>
+                          <Value>=Fields!billin_fr.Value</Value>
+                        </SortExpression>
+                      </SortExpressions>
                       <TablixHeader>
-                        <Size>2.66667in</Size>
+                        <Size>1in</Size>
                         <CellContents>
-                          <Textbox Name="Party2">
+                          <Textbox Name="billin_fr">
                             <CanGrow>true</CanGrow>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>=Fields!Party.Value</Value>
-                                    <Style />
+                                    <Value>=Fields!billin_fr.Value</Value>
+                                    <Style>
+                                      <FontFamily>Arial</FontFamily>
+                                      <Format>dd/MM/yyyy</Format>
+                                    </Style>
                                   </TextRun>
                                 </TextRuns>
                                 <Style />
                               </Paragraph>
                             </Paragraphs>
-                            <rd:DefaultName>Party</rd:DefaultName>
+                            <rd:DefaultName>billin_fr</rd:DefaultName>
                             <Style>
                               <Border>
                                 <Color>LightGrey</Color>
@@ -968,24 +1049,37 @@
                       </TablixHeader>
                       <TablixMembers>
                         <TablixMember>
+                          <Group Name="billing_to">
+                            <GroupExpressions>
+                              <GroupExpression>=Fields!billing_to.Value</GroupExpression>
+                            </GroupExpressions>
+                          </Group>
+                          <SortExpressions>
+                            <SortExpression>
+                              <Value>=Fields!billing_to.Value</Value>
+                            </SortExpression>
+                          </SortExpressions>
                           <TablixHeader>
-                            <Size>2.30208in</Size>
+                            <Size>1in</Size>
                             <CellContents>
-                              <Textbox Name="ship_to_party2">
+                              <Textbox Name="billing_to">
                                 <CanGrow>true</CanGrow>
                                 <KeepTogether>true</KeepTogether>
                                 <Paragraphs>
                                   <Paragraph>
                                     <TextRuns>
                                       <TextRun>
-                                        <Value>=Fields!ship_to_party.Value</Value>
-                                        <Style />
+                                        <Value>=Fields!billing_to.Value</Value>
+                                        <Style>
+                                          <FontFamily>Arial</FontFamily>
+                                          <Format>dd/MM/yyyy</Format>
+                                        </Style>
                                       </TextRun>
                                     </TextRuns>
                                     <Style />
                                   </Paragraph>
                                 </Paragraphs>
-                                <rd:DefaultName>ship_to_party</rd:DefaultName>
+                                <rd:DefaultName>billing_to</rd:DefaultName>
                                 <Style>
                                   <Border>
                                     <Color>LightGrey</Color>
@@ -1002,23 +1096,23 @@
                           <TablixMembers>
                             <TablixMember>
                               <TablixHeader>
-                                <Size>1.26042in</Size>
+                                <Size>2.66667in</Size>
                                 <CellContents>
-                                  <Textbox Name="delivery2">
+                                  <Textbox Name="Party2">
                                     <CanGrow>true</CanGrow>
                                     <KeepTogether>true</KeepTogether>
                                     <Paragraphs>
                                       <Paragraph>
                                         <TextRuns>
                                           <TextRun>
-                                            <Value>=Fields!delivery.Value</Value>
+                                            <Value>=Fields!Party.Value</Value>
                                             <Style />
                                           </TextRun>
                                         </TextRuns>
                                         <Style />
                                       </Paragraph>
                                     </Paragraphs>
-                                    <rd:DefaultName>delivery</rd:DefaultName>
+                                    <rd:DefaultName>Party</rd:DefaultName>
                                     <Style>
                                       <Border>
                                         <Color>LightGrey</Color>
@@ -1035,23 +1129,23 @@
                               <TablixMembers>
                                 <TablixMember>
                                   <TablixHeader>
-                                    <Size>1in</Size>
+                                    <Size>2.30208in</Size>
                                     <CellContents>
-                                      <Textbox Name="pickup2">
+                                      <Textbox Name="ship_to_party2">
                                         <CanGrow>true</CanGrow>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>=Fields!pickup.Value</Value>
+                                                <Value>=Fields!ship_to_party.Value</Value>
                                                 <Style />
                                               </TextRun>
                                             </TextRuns>
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>pickup</rd:DefaultName>
+                                        <rd:DefaultName>ship_to_party</rd:DefaultName>
                                         <Style>
                                           <Border>
                                             <Color>LightGrey</Color>
@@ -1068,23 +1162,23 @@
                                   <TablixMembers>
                                     <TablixMember>
                                       <TablixHeader>
-                                        <Size>1in</Size>
+                                        <Size>1.26042in</Size>
                                         <CellContents>
-                                          <Textbox Name="branch2">
+                                          <Textbox Name="delivery2">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!branch.Value</Value>
+                                                    <Value>=Fields!delivery.Value</Value>
                                                     <Style />
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style />
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>branch</rd:DefaultName>
+                                            <rd:DefaultName>delivery</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -1103,21 +1197,21 @@
                                           <TablixHeader>
                                             <Size>1in</Size>
                                             <CellContents>
-                                              <Textbox Name="INVOICE_NUM2">
+                                              <Textbox Name="pickup2">
                                                 <CanGrow>true</CanGrow>
                                                 <KeepTogether>true</KeepTogether>
                                                 <Paragraphs>
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>=Fields!INVOICE_NUM.Value</Value>
+                                                        <Value>=Fields!pickup.Value</Value>
                                                         <Style />
                                                       </TextRun>
                                                     </TextRuns>
                                                     <Style />
                                                   </Paragraph>
                                                 </Paragraphs>
-                                                <rd:DefaultName>INVOICE_NUM</rd:DefaultName>
+                                                <rd:DefaultName>pickup</rd:DefaultName>
                                                 <Style>
                                                   <Border>
                                                     <Color>LightGrey</Color>
@@ -1134,23 +1228,23 @@
                                           <TablixMembers>
                                             <TablixMember>
                                               <TablixHeader>
-                                                <Size>1.17708in</Size>
+                                                <Size>1.83333in</Size>
                                                 <CellContents>
-                                                  <Textbox Name="invoice_dt2">
+                                                  <Textbox Name="branch2">
                                                     <CanGrow>true</CanGrow>
                                                     <KeepTogether>true</KeepTogether>
                                                     <Paragraphs>
                                                       <Paragraph>
                                                         <TextRuns>
                                                           <TextRun>
-                                                            <Value>=Fields!invoice_dt.Value</Value>
+                                                            <Value>=Fields!branch.Value</Value>
                                                             <Style />
                                                           </TextRun>
                                                         </TextRuns>
                                                         <Style />
                                                       </Paragraph>
                                                     </Paragraphs>
-                                                    <rd:DefaultName>invoice_dt</rd:DefaultName>
+                                                    <rd:DefaultName>branch</rd:DefaultName>
                                                     <Style>
                                                       <Border>
                                                         <Color>LightGrey</Color>
@@ -1164,6 +1258,81 @@
                                                   </Textbox>
                                                 </CellContents>
                                               </TablixHeader>
+                                              <TablixMembers>
+                                                <TablixMember>
+                                                  <TablixHeader>
+                                                    <Size>1in</Size>
+                                                    <CellContents>
+                                                      <Textbox Name="INVOICE_NUM2">
+                                                        <CanGrow>true</CanGrow>
+                                                        <KeepTogether>true</KeepTogether>
+                                                        <Paragraphs>
+                                                          <Paragraph>
+                                                            <TextRuns>
+                                                              <TextRun>
+                                                                <Value>=Fields!INVOICE_NUM.Value</Value>
+                                                                <Style />
+                                                              </TextRun>
+                                                            </TextRuns>
+                                                            <Style />
+                                                          </Paragraph>
+                                                        </Paragraphs>
+                                                        <rd:DefaultName>INVOICE_NUM</rd:DefaultName>
+                                                        <Style>
+                                                          <Border>
+                                                            <Color>LightGrey</Color>
+                                                            <Style>Solid</Style>
+                                                          </Border>
+                                                          <PaddingLeft>2pt</PaddingLeft>
+                                                          <PaddingRight>2pt</PaddingRight>
+                                                          <PaddingTop>2pt</PaddingTop>
+                                                          <PaddingBottom>2pt</PaddingBottom>
+                                                        </Style>
+                                                      </Textbox>
+                                                    </CellContents>
+                                                  </TablixHeader>
+                                                  <TablixMembers>
+                                                    <TablixMember>
+                                                      <TablixHeader>
+                                                        <Size>1.17708in</Size>
+                                                        <CellContents>
+                                                          <Textbox Name="invoice_dt2">
+                                                            <CanGrow>true</CanGrow>
+                                                            <KeepTogether>true</KeepTogether>
+                                                            <Paragraphs>
+                                                              <Paragraph>
+                                                                <TextRuns>
+                                                                  <TextRun>
+                                                                    <Value>=Fields!invoice_dt.Value</Value>
+                                                                    <Style>
+                                                                      <Format>dd/MM/yyyy</Format>
+                                                                    </Style>
+                                                                  </TextRun>
+                                                                </TextRuns>
+                                                                <Style />
+                                                              </Paragraph>
+                                                            </Paragraphs>
+                                                            <rd:DefaultName>invoice_dt</rd:DefaultName>
+                                                            <Style>
+                                                              <Border>
+                                                                <Color>LightGrey</Color>
+                                                                <Style>Solid</Style>
+                                                              </Border>
+                                                              <PaddingLeft>2pt</PaddingLeft>
+                                                              <PaddingRight>2pt</PaddingRight>
+                                                              <PaddingTop>2pt</PaddingTop>
+                                                              <PaddingBottom>2pt</PaddingBottom>
+                                                            </Style>
+                                                          </Textbox>
+                                                        </CellContents>
+                                                      </TablixHeader>
+                                                      <TablixMembers>
+                                                        <TablixMember />
+                                                      </TablixMembers>
+                                                    </TablixMember>
+                                                  </TablixMembers>
+                                                </TablixMember>
+                                              </TablixMembers>
                                             </TablixMember>
                                           </TablixMembers>
                                         </TablixMember>
@@ -1183,7 +1352,7 @@
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
             <Height>1in</Height>
-            <Width>13.40625in</Width>
+            <Width>17.41666in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1194,7 +1363,7 @@
         <Height>1in</Height>
         <Style />
       </Body>
-      <Width>13.40625in</Width>
+      <Width>18.41667in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
