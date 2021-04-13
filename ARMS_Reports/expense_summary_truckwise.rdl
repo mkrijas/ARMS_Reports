@@ -281,6 +281,36 @@
                   </TablixCornerCell>
                   <TablixCornerCell>
                     <CellContents>
+                      <Textbox Name="Textbox15">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value />
+                                <Style />
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox15</rd:DefaultName>
+                        <Style>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixCornerCell>
+                  <TablixCornerCell>
+                    <CellContents>
                       <Textbox Name="Textbox4">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
@@ -432,8 +462,10 @@
                           <PaddingBottom>2pt</PaddingBottom>
                         </Style>
                       </Textbox>
+                      <ColSpan>2</ColSpan>
                     </CellContents>
                   </TablixCornerCell>
+                  <TablixCornerCell />
                   <TablixCornerCell>
                     <CellContents>
                       <Textbox Name="Textbox2">
@@ -982,6 +1014,7 @@
                           <PaddingBottom>2pt</PaddingBottom>
                         </Style>
                       </Textbox>
+                      <rd:Selected>true</rd:Selected>
                     </CellContents>
                   </TablixHeader>
                   <TablixMembers>
@@ -1038,7 +1071,7 @@
                   <TablixMembers>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>2.52083in</Size>
+                        <Size>2.28471in</Size>
                         <CellContents>
                           <Textbox Name="Textbox14">
                             <CanGrow>true</CanGrow>
@@ -1260,7 +1293,7 @@
                       <TablixMembers>
                         <TablixMember>
                           <TablixHeader>
-                            <Size>2.52083in</Size>
+                            <Size>2.28471in</Size>
                             <CellContents>
                               <Textbox Name="model_tb">
                                 <CanGrow>true</CanGrow>
@@ -1499,27 +1532,23 @@
                             </SortExpression>
                           </SortExpressions>
                           <TablixHeader>
-                            <Size>2.52083in</Size>
+                            <Size>0.71527in</Size>
                             <CellContents>
-                              <Textbox Name="trip_number">
+                              <Textbox Name="Textbox44">
                                 <CanGrow>true</CanGrow>
                                 <KeepTogether>true</KeepTogether>
                                 <Paragraphs>
                                   <Paragraph>
                                     <TextRuns>
                                       <TextRun>
-                                        <Value xml:space="preserve">             </Value>
-                                        <Style />
-                                      </TextRun>
-                                      <TextRun>
-                                        <Value>=Fields!Truck.Value</Value>
+                                        <Value />
                                         <Style />
                                       </TextRun>
                                     </TextRuns>
                                     <Style />
                                   </Paragraph>
                                 </Paragraphs>
-                                <rd:DefaultName>trip_number</rd:DefaultName>
+                                <rd:DefaultName>Textbox44</rd:DefaultName>
                                 <Style>
                                   <Border>
                                     <Color>LightGrey</Color>
@@ -1536,24 +1565,23 @@
                           <TablixMembers>
                             <TablixMember>
                               <TablixHeader>
-                                <Size>0.73042in</Size>
+                                <Size>1.56944in</Size>
                                 <CellContents>
-                                  <Textbox Name="syskm">
+                                  <Textbox Name="trip_number">
                                     <CanGrow>true</CanGrow>
                                     <KeepTogether>true</KeepTogether>
                                     <Paragraphs>
                                       <Paragraph>
                                         <TextRuns>
                                           <TextRun>
-                                            <Value>=Fields!syskm.Value</Value>
-                                            <Style>
-                                              <Format>#,0;(#,0);'-'</Format>
-                                            </Style>
+                                            <Value>=Fields!Truck.Value</Value>
+                                            <Style />
                                           </TextRun>
                                         </TextRuns>
                                         <Style />
                                       </Paragraph>
                                     </Paragraphs>
+                                    <rd:DefaultName>trip_number</rd:DefaultName>
                                     <Style>
                                       <Border>
                                         <Color>LightGrey</Color>
@@ -1570,16 +1598,16 @@
                               <TablixMembers>
                                 <TablixMember>
                                   <TablixHeader>
-                                    <Size>0.72917in</Size>
+                                    <Size>0.73042in</Size>
                                     <CellContents>
-                                      <Textbox Name="runkm">
+                                      <Textbox Name="syskm">
                                         <CanGrow>true</CanGrow>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>=Fields!runkm.Value</Value>
+                                                <Value>=Fields!syskm.Value</Value>
                                                 <Style>
                                                   <Format>#,0;(#,0);'-'</Format>
                                                 </Style>
@@ -1604,25 +1632,24 @@
                                   <TablixMembers>
                                     <TablixMember>
                                       <TablixHeader>
-                                        <Size>0.81249in</Size>
+                                        <Size>0.72917in</Size>
                                         <CellContents>
-                                          <Textbox Name="Textbox11">
+                                          <Textbox Name="runkm">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!fuel.Value</Value>
+                                                    <Value>=Fields!runkm.Value</Value>
                                                     <Style>
-                                                      <Format>#,0.00;(#,0.00)</Format>
+                                                      <Format>#,0;(#,0);'-'</Format>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style />
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox11</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -1639,25 +1666,25 @@
                                       <TablixMembers>
                                         <TablixMember>
                                           <TablixHeader>
-                                            <Size>0.55208in</Size>
+                                            <Size>0.81249in</Size>
                                             <CellContents>
-                                              <Textbox Name="Textbox32">
+                                              <Textbox Name="Textbox11">
                                                 <CanGrow>true</CanGrow>
                                                 <KeepTogether>true</KeepTogether>
                                                 <Paragraphs>
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>=Fields!mlg.Value</Value>
+                                                        <Value>=Fields!fuel.Value</Value>
                                                         <Style>
-                                                          <Format>0.00;(0.00)</Format>
+                                                          <Format>#,0.00;(#,0.00)</Format>
                                                         </Style>
                                                       </TextRun>
                                                     </TextRuns>
                                                     <Style />
                                                   </Paragraph>
                                                 </Paragraphs>
-                                                <rd:DefaultName>Textbox32</rd:DefaultName>
+                                                <rd:DefaultName>Textbox11</rd:DefaultName>
                                                 <Style>
                                                   <Border>
                                                     <Color>LightGrey</Color>
@@ -1672,7 +1699,44 @@
                                             </CellContents>
                                           </TablixHeader>
                                           <TablixMembers>
-                                            <TablixMember />
+                                            <TablixMember>
+                                              <TablixHeader>
+                                                <Size>0.55208in</Size>
+                                                <CellContents>
+                                                  <Textbox Name="Textbox32">
+                                                    <CanGrow>true</CanGrow>
+                                                    <KeepTogether>true</KeepTogether>
+                                                    <Paragraphs>
+                                                      <Paragraph>
+                                                        <TextRuns>
+                                                          <TextRun>
+                                                            <Value>=Fields!mlg.Value</Value>
+                                                            <Style>
+                                                              <Format>0.00;(0.00)</Format>
+                                                            </Style>
+                                                          </TextRun>
+                                                        </TextRuns>
+                                                        <Style />
+                                                      </Paragraph>
+                                                    </Paragraphs>
+                                                    <rd:DefaultName>Textbox32</rd:DefaultName>
+                                                    <Style>
+                                                      <Border>
+                                                        <Color>LightGrey</Color>
+                                                        <Style>Solid</Style>
+                                                      </Border>
+                                                      <PaddingLeft>2pt</PaddingLeft>
+                                                      <PaddingRight>2pt</PaddingRight>
+                                                      <PaddingTop>2pt</PaddingTop>
+                                                      <PaddingBottom>2pt</PaddingBottom>
+                                                    </Style>
+                                                  </Textbox>
+                                                </CellContents>
+                                              </TablixHeader>
+                                              <TablixMembers>
+                                                <TablixMember />
+                                              </TablixMembers>
+                                            </TablixMember>
                                           </TablixMembers>
                                         </TablixMember>
                                       </TablixMembers>
@@ -1693,7 +1757,7 @@
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>2.52083in</Size>
+                    <Size>2.28471in</Size>
                     <CellContents>
                       <Textbox Name="Textbox29">
                         <CanGrow>true</CanGrow>
@@ -1918,7 +1982,7 @@
             <Top>2.66027in</Top>
             <Left>0.155in</Left>
             <Height>1.5625in</Height>
-            <Width>7.26291in</Width>
+            <Width>7.02679in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -2345,7 +2409,7 @@
         <Height>4.22277in</Height>
         <Style />
       </Body>
-      <Width>7.41791in</Width>
+      <Width>8.41791in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
