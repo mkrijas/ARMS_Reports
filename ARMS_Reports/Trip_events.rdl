@@ -68,6 +68,10 @@
           <DataField>used_time</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
+        <Field Name="driver_Name">
+          <DataField>driver_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>halt_report</rd:DataSetName>
@@ -270,7 +274,7 @@
                                   </Style>
                                 </TextRun>
                                 <TextRun>
-                                  <Value> Trips</Value>
+                                  <Value> Trips </Value>
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -413,6 +417,18 @@
                                 </TextRun>
                                 <TextRun>
                                   <Value>=Fields!trip_Number.Value</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value> - </Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Fields!driver_Name.Value</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -868,7 +884,7 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>1.30968in</Height>
+        <Height>1.30969in</Height>
         <Style>
           <Border />
           <BackgroundColor>White</BackgroundColor>

@@ -85,6 +85,8 @@
     <Report Include="routeExp_sum.rdl" />
     <Report Include="Sale_voucher_svh.rdl" />
     <Report Include="SettledBills.rdl" />
+    <Report Include="stockflow.rdl" />
+    <Report Include="stock_report_period.rdl" />
     <Report Include="time_spent.rdl" />
     <Report Include="time_spent_all.rdl" />
     <Report Include="tonn_report.rdl" />
