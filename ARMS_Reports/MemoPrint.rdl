@@ -17,9 +17,6 @@
           <QueryParameter Name="@wid">
             <Value>=Parameters!wid.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="@operation">
-            <Value>=Parameters!operation.Value</Value>
-          </QueryParameter>
         </QueryParameters>
         <CommandText>EXEC acc_memo_print @wid = @wid,@operation = 'Bills'</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
@@ -1590,7 +1587,7 @@
                     <DataSetName>Bills</DataSetName>
                     <Left>2.09986in</Left>
                     <Height>0.98958in</Height>
-                    <Width>4.0564in</Width>
+                    <Width>4.05639in</Width>
                     <ZIndex>1</ZIndex>
                     <Style>
                       <Border>
@@ -1853,7 +1850,6 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox47</rd:DefaultName>
-              <Top>0in</Top>
               <Height>0.52083in</Height>
               <Width>3.04778in</Width>
               <Style>
@@ -1906,7 +1902,6 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox47</rd:DefaultName>
-              <Top>0in</Top>
               <Left>3.31077in</Left>
               <Height>0.52083in</Height>
               <Width>2.84549in</Width>
@@ -2072,10 +2067,6 @@
       <DataType>String</DataType>
       <Prompt>wid</Prompt>
     </ReportParameter>
-    <ReportParameter Name="operation">
-      <DataType>String</DataType>
-      <Prompt>operation</Prompt>
-    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -2086,11 +2077,6 @@
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>0</RowIndex>
           <ParameterName>wid</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>1</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>operation</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
