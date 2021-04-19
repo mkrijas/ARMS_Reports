@@ -17,22 +17,17 @@
           <QueryParameter Name="@wid">
             <Value>=Parameters!wid.Value</Value>
           </QueryParameter>
+          <QueryParameter Name="@operation">
+            <Value>=Parameters!operation.Value</Value>
+          </QueryParameter>
         </QueryParameters>
         <CommandText>EXEC acc_memo_print @wid = @wid,@operation = 'Bills'</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
-        <Field Name="wrapper_id">
-          <DataField>wrapper_id</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
-        </Field>
-        <Field Name="head">
-          <DataField>head</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="t_head">
-          <DataField>t_head</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+        <Field Name="branch_Name">
+          <DataField>branch_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="tr_ref">
           <DataField>tr_ref</DataField>
@@ -41,18 +36,6 @@
         <Field Name="amount">
           <DataField>amount</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="account_Name">
-          <DataField>account_Name</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="account_Group_Id">
-          <DataField>account_Group_Id</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Catagory_Id">
-          <DataField>Catagory_Id</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -1180,10 +1163,10 @@
                     <TablixBody>
                       <TablixColumns>
                         <TablixColumn>
-                          <Width>2.55597in</Width>
+                          <Width>3.06639in</Width>
                         </TablixColumn>
                         <TablixColumn>
-                          <Width>0.95875in</Width>
+                          <Width>0.99in</Width>
                         </TablixColumn>
                       </TablixColumns>
                       <TablixRows>
@@ -1369,6 +1352,18 @@
                                       <TextRuns>
                                         <TextRun>
                                           <Value>=Fields!tr_ref.Value</Value>
+                                          <Style />
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value> - (</Value>
+                                          <Style />
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>=Fields!branch_Name.Value</Value>
+                                          <Style />
+                                        </TextRun>
+                                        <TextRun>
+                                          <Value>)</Value>
                                           <Style />
                                         </TextRun>
                                       </TextRuns>
@@ -1593,9 +1588,9 @@
                       </TablixMembers>
                     </TablixRowHierarchy>
                     <DataSetName>Bills</DataSetName>
-                    <Left>2.64153in</Left>
+                    <Left>2.09986in</Left>
                     <Height>0.98958in</Height>
-                    <Width>3.51472in</Width>
+                    <Width>4.0564in</Width>
                     <ZIndex>1</ZIndex>
                     <Style>
                       <Border>
@@ -1604,7 +1599,7 @@
                     </Style>
                   </Tablix>
                   <Line Name="Line3">
-                    <Left>2.64153in</Left>
+                    <Left>2.09986in</Left>
                     <Height>2.7675in</Height>
                     <Width>0in</Width>
                     <ZIndex>2</ZIndex>
@@ -1679,7 +1674,6 @@
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>0in</Top>
             <Height>6.205in</Height>
             <Width>6.15626in</Width>
             <Style>
@@ -2078,6 +2072,10 @@
       <DataType>String</DataType>
       <Prompt>wid</Prompt>
     </ReportParameter>
+    <ReportParameter Name="operation">
+      <DataType>String</DataType>
+      <Prompt>operation</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -2088,6 +2086,11 @@
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>0</RowIndex>
           <ParameterName>wid</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>operation</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
