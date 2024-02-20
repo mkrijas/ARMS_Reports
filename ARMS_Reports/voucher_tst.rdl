@@ -48,6 +48,10 @@
           <DataField>remarks</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="destinationNames">
+          <DataField>destinationNames</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="prep">
           <DataField>prep</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -1257,6 +1261,23 @@
                         <Format>dd/MM/yyyy</Format>
                       </Style>
                     </TextRun>
+                    <TextRun>
+                      <Value>  , Unloaded at </Value>
+                      <Style>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Format>dd/MM/yyyy</Format>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Label>destination</Label>
+                      <Value>=First(Fields!destinationNames.Value, "trans")</Value>
+                      <Style>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Format>dd/MM/yyyy</Format>
+                      </Style>
+                    </TextRun>
                   </TextRuns>
                   <Style>
                     <TextAlign>Left</TextAlign>
@@ -1579,6 +1600,9 @@
                         'hundreds' range
                         pos = (numDigits Mod 3) + 1
                         place = " Hundred "
+If beginsZero Then
+place = ""
+End If
                         Exit Select
                 'thousands' range
                     Case 4, 5

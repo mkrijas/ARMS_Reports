@@ -2172,7 +2172,7 @@
               <TablixMembers>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>0.75375cm</Size>
+                    <Size>8.25375cm</Size>
                     <CellContents>
                       <Textbox Name="Textbox130">
                         <CanGrow>true</CanGrow>
@@ -2181,7 +2181,7 @@
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value />
+                                <Value>Catagory Id</Value>
                                 <Style />
                               </TextRun>
                             </TextRuns>
@@ -2252,7 +2252,7 @@
                   <TablixMembers>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>8.86292cm</Size>
+                        <Size>16.36292cm</Size>
                         <CellContents>
                           <Textbox Name="Textbox95">
                             <CanGrow>true</CanGrow>
@@ -2305,23 +2305,23 @@
                         </GroupExpressions>
                       </Group>
                       <TablixHeader>
-                        <Size>0.75375cm</Size>
+                        <Size>8.25375cm</Size>
                         <CellContents>
-                          <Textbox Name="Textbox131">
+                          <Textbox Name="Catagory_Id">
                             <CanGrow>true</CanGrow>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value />
+                                    <Value>=Sum(Fields!Catagory_Id.Value)</Value>
                                     <Style />
                                   </TextRun>
                                 </TextRuns>
                                 <Style />
                               </Paragraph>
                             </Paragraphs>
-                            <rd:DefaultName>Textbox131</rd:DefaultName>
+                            <rd:DefaultName>Catagory_Id</rd:DefaultName>
                             <Style>
                               <Border>
                                 <Color>LightGrey</Color>
@@ -2379,7 +2379,7 @@
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>0.75375cm</Size>
+                    <Size>8.25375cm</Size>
                     <CellContents>
                       <Textbox Name="Textbox133">
                         <CanGrow>true</CanGrow>
@@ -2456,7 +2456,7 @@
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
             <Height>3.56459cm</Height>
-            <Width>39.36563cm</Width>
+            <Width>46.86563cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -2467,7 +2467,7 @@
         <Height>1.40338in</Height>
         <Style />
       </Body>
-      <Width>15.49828in</Width>
+      <Width>18.45104in</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>

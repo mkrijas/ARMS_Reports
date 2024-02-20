@@ -156,6 +156,10 @@
           <DataField>Branches</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="BankAccounts">
+          <DataField>BankAccounts</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
     </DataSet>
   </DataSets>
@@ -287,7 +291,7 @@
                       </TextRun>
                       <TextRun>
                         <Label>payable</Label>
-                        <Value>=Sum(Fields!amount.Value, "Payment")</Value>
+                        <Value>=First(Fields!BankAccounts.Value, "Branches")</Value>
                         <Style>
                           <FontSize>12pt</FontSize>
                           <FontWeight>Bold</FontWeight>
@@ -300,7 +304,7 @@
                 <rd:DefaultName>Textbox6</rd:DefaultName>
                 <Top>0.98265in</Top>
                 <Height>0.32292in</Height>
-                <Width>3.66667in</Width>
+                <Width>6.04167in</Width>
                 <ZIndex>3</ZIndex>
                 <Style>
                   <Border>

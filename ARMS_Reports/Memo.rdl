@@ -1503,7 +1503,7 @@
                             <ActionInfo>
                               <Actions>
                                 <Action>
-                                  <Hyperlink>="javascript:void(window.open('https://192.168.10.4:44388/"+ Fields!link.Value + "', '_blank'))"</Hyperlink>
+                                  <Hyperlink>="javascript:void(window.open('https://10.200.90.22:44388/"+ Fields!link.Value + "', '_blank'))"</Hyperlink>
                                 </Action>
                               </Actions>
                             </ActionInfo>
@@ -1520,6 +1520,7 @@
                               <PaddingBottom>2pt</PaddingBottom>
                             </Style>
                           </Textbox>
+                          <rd:Selected>true</rd:Selected>
                         </CellContents>
                       </TablixHeader>
                       <TablixMembers>

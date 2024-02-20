@@ -3100,32 +3100,58 @@
     </ReportParameter>
     <ReportParameter Name="rm">
       <DataType>Boolean</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>false</Value>
+        </Values>
+      </DefaultValue>
       <Prompt>Show Narration</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="path">
-      <DataType>String</DataType>
-      <Prompt>app path</Prompt>
     </ReportParameter>
     <ReportParameter Name="debit">
       <DataType>Float</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>0</Value>
+        </Values>
+      </DefaultValue>
       <Prompt>Deibit filter</Prompt>
     </ReportParameter>
     <ReportParameter Name="credit">
       <DataType>Float</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>0</Value>
+        </Values>
+      </DefaultValue>
       <Prompt>Credit Filter</Prompt>
     </ReportParameter>
     <ReportParameter Name="remarks">
       <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value />
+        </Values>
+      </DefaultValue>
       <AllowBlank>true</AllowBlank>
       <Prompt>Remarks</Prompt>
     </ReportParameter>
     <ReportParameter Name="reference">
       <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value />
+        </Values>
+      </DefaultValue>
       <AllowBlank>true</AllowBlank>
       <Prompt>Reference Filter</Prompt>
     </ReportParameter>
     <ReportParameter Name="memo">
       <DataType>Boolean</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>false</Value>
+        </Values>
+      </DefaultValue>
       <Prompt>Show Memo</Prompt>
     </ReportParameter>
   </ReportParameters>
@@ -3153,11 +3179,6 @@
           <ColumnIndex>1</ColumnIndex>
           <RowIndex>1</RowIndex>
           <ParameterName>rm</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>0</ColumnIndex>
-          <RowIndex>2</RowIndex>
-          <ParameterName>path</ParameterName>
         </CellDefinition>
         <CellDefinition>
           <ColumnIndex>1</ColumnIndex>
